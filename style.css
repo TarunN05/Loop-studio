@@ -41,8 +41,8 @@ li{
 }
 
 
-
-.nav-section{
+/* -------------------------[Tag section]-------------------------------- */
+.tag-section{
     background-image: url('./images/desktop/image-hero.jpg');
     background-size: cover ;
     background-repeat: no-repeat;
@@ -53,6 +53,7 @@ li{
     z-index: -100;
     position: relative;
     top: -53px;
+    overflow: hidden;
 }
 
 .tag-line h1{
@@ -69,7 +70,48 @@ li{
     text-transform: uppercase;
 }
 
-@media screen and (max-width:650px){
+/* ---------------------------------[VR section]-------------------------------- */
+
+
+.vr-section{
+    padding: 4rem 12rem;
+    display: flex;
+    align-items: center;
+}
+
+.vr-section .vr-text{
+    transform: translate(-245px, 132px);
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+.vr-section .vr-text h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+.vr-section .vr-text p{
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------[Media queries]----------------------------------------------- */
+@media screen and (max-width:850px){
 
     body{
         overflow-x: hidden;
@@ -101,6 +143,26 @@ li{
     left: 9px;
     font-size: 1.7rem;
     top: 260px;
+  }
+
+  .vr-section{
+      padding: 0rem;
+      flex-direction: column;
+  }
+  .vr-section .vr-man img{
+    position: relative;
+    left: 10px;
+    width: 95%;
+  }
+  .vr-section .vr-text{
+    position: relative;
+    left: 249px;
+    top: -132px;
+    padding: 2rem 0rem;
+  }
+  .vr-section .vr-text h1{
+      line-height: 1.5;
+      padding-bottom: 20px;
   }
 
 }
